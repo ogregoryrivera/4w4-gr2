@@ -19,6 +19,25 @@ body{
     background-color: brown;
 }
 
+header{
+    background-color: purple;
+    padding: 5%;
+}
+
 h1{
     font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+}
+
+hr{
+    color: black;
+    background-color: black;
+    height: 20px;
+}
+
+footer{
+    font-size: 100px;
+    background-color: aliceblue;
+    padding: 2%;
+    color: red;
 }
