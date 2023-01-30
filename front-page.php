@@ -9,11 +9,12 @@
 <h1>Bienvenue dans le cours 4W4</h1>
 
 <main>
-<h3>index.php</h3>
+    <h3>front-page.php</h3>
     <?php if(have_posts()):
             while(have_posts()) : the_post();
-            the_title('<h1>','<h1/>');
-            the_content('<p>,<p/>'); ?>
+            echo '<h1>'. get_the_title() . '</h1>';
+
+            //the_content('<p>,<p/>'); ?>
             <hr>
     <?php endwhile;
     endif; ?>    
