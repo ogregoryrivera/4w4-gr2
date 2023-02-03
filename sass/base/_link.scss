@@ -1,0 +1,13 @@
+a{
+    color: orange;
+    
+    &:visited{
+        color:bisque
+    }
+
+}
+
+a:hover{
+    color: turquoise; 
+}
+

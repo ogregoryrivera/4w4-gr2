@@ -371,4 +371,25 @@ p {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-/* --------------------------------------------- composant *//*# sourceMappingURL=style.css.map */
+a {
+  color: orange;
+}
+a:visited {
+  color: bisque;
+}
+
+a:hover {
+  color: turquoise;
+}
+
+/* --------------------------------------------- composant */
+.site__footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.site__footer section {
+  border: 1px solid #aaa;
+  flex: 1 1 200px;
+}/*# sourceMappingURL=style.css.map */
