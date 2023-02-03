@@ -2,10 +2,19 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
+    background-color: orange;
+    font-size: 3em;
 }
 
 .site__footer section{
     border: 1px solid #aaa;
     flex: 1 1 200px;
+}
+
+#menu-entete{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    list-style: none;
+    text-decoration: none;
 }
