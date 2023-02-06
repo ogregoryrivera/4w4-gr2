@@ -402,4 +402,17 @@ a:hover {
   font-size: 1.5rem;
   list-style: none;
   text-decoration: none;
+}
+
+.menu-entete-container .menu {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+.menu-entete-container .menu .menu-item {
+  color: #6eff73;
+}
+.menu-entete-container .menu .menu-item a {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.414);
 }/*# sourceMappingURL=style.css.map */
