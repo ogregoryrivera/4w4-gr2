@@ -1,0 +1,31 @@
+.site__header{
+    
+}
+
+.site__header__logo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-entete-container{ // nav
+    .menu{// ul
+        display: flex;
+        list-style-type: none;
+        justify-content: space-around;
+        align-items: center;
+
+        .menu-item{// li
+            color: #6eff73;
+            justify-content: flex-end;
+            
+            a{
+                display: block;
+                background-color: rgb(109, 109, 109);
+                padding: 30px 20px;
+                border-radius: 25% 0 25% 0;
+                margin: 5%;
+                
+            }
+        }
+    }
+}

@@ -7,8 +7,11 @@
 }
 
 .site__footer section{
-    border: 1px solid #aaa;
+    border: 1px solid white;
     flex: 1 1 200px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: teal;
+    
 }
 
 #menu-entete{
@@ -17,4 +20,5 @@
     font-size: 1.5rem;
     list-style: none;
     text-decoration: none;
+    
 }

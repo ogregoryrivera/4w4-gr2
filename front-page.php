@@ -14,7 +14,10 @@
             while(have_posts()) : the_post(); ?>
             <h1> <a href="<?php echo get_permalink(); ?>"> <?php echo get_the_title(); ?> </a> </h1>
 
-            
+            <?php //the_content(); affiche le contenu complet de l'article ?>
+            <?php // the_excerpt()affiche un résumé de l'article ?>  
+            <?= wp_trim_words(get_the_excerpt(), 10, "&#11088;"); ?> 
+
             <hr>
     <?php endwhile;
     endif; ?>    

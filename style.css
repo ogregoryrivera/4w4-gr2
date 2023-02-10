@@ -323,10 +323,14 @@ template {
 /* --------------------------------------------- base */
 h1 {
   font-size: clamp(0.75rem, -0.75rem + 4.8vw, 3.75rem);
+  display: flex;
+  justify-content: center;
 }
 
 h2 {
   font-size: clamp(0.625rem, -0.3125rem + 3vw, 2.5rem);
+  display: flex;
+  justify-content: center;
 }
 
 h3 {
@@ -392,8 +396,10 @@ a:hover {
 }
 
 .site__footer section {
-  border: 1px solid #aaa;
+  border: 1px solid white;
   flex: 1 1 200px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: teal;
 }
 
 #menu-entete {
@@ -404,15 +410,25 @@ a:hover {
   text-decoration: none;
 }
 
+.site__header__logo {
+  display: flex;
+  justify-content: space-between;
+}
+
 .menu-entete-container .menu {
   display: flex;
   list-style-type: none;
   justify-content: space-around;
+  align-items: center;
 }
 .menu-entete-container .menu .menu-item {
   color: #6eff73;
+  justify-content: flex-end;
 }
 .menu-entete-container .menu .menu-item a {
   display: block;
-  background-color: rgba(0, 0, 0, 0.414);
+  background-color: rgb(109, 109, 109);
+  padding: 30px 20px;
+  border-radius: 25% 0 25% 0;
+  margin: 5%;
 }/*# sourceMappingURL=style.css.map */
