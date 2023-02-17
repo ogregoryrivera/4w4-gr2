@@ -22,5 +22,10 @@
                             ) );
                         }
                         add_action( 'after_setup_theme', 'enregistrement_nav_menu', 0 );
-                    }                
+                    }        
+                    
+add_theme_support('title-tag');
+add_theme_support('custom-logo', array('heigh' => 400,
+                                       'width' => 700));
+add_theme_support('post-thumbnails');
 ?> 

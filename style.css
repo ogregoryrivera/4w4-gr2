@@ -323,14 +323,21 @@ template {
 /* --------------------------------------------- base */
 h1 {
   font-size: clamp(0.75rem, -0.75rem + 4.8vw, 3.75rem);
+  display: flex;
+  justify-content: center;
 }
 
 h2 {
   font-size: clamp(0.625rem, -0.3125rem + 3vw, 2.5rem);
+  display: flex;
+  justify-content: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 h3 {
   font-size: clamp(0.5625rem, -0.25rem + 2.6vw, 2.1875rem);
+  display: flex;
+  justify-content: center;
 }
 
 h4 {
@@ -373,6 +380,7 @@ p {
 
 a {
   color: orange;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 a:visited {
   color: bisque;
@@ -392,8 +400,10 @@ a:hover {
 }
 
 .site__footer section {
-  border: 1px solid #aaa;
+  border: 1px solid white;
   flex: 1 1 200px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: teal;
 }
 
 #menu-entete {
@@ -404,15 +414,58 @@ a:hover {
   text-decoration: none;
 }
 
+.site__header__logo {
+  display: flex;
+  justify-content: space-between;
+}
+
 .menu-entete-container .menu {
   display: flex;
   list-style-type: none;
   justify-content: space-around;
+  align-items: center;
 }
 .menu-entete-container .menu .menu-item {
   color: #6eff73;
+  justify-content: flex-end;
 }
 .menu-entete-container .menu .menu-item a {
   display: block;
-  background-color: rgba(0, 0, 0, 0.414);
+  background-color: rgb(109, 109, 109);
+  padding: 30px 20px;
+  border-radius: 25% 0 25% 0;
+  margin: 5%;
+}
+
+/*
+.blocflex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    article{
+        flex: 1 1 200px;
+        border: solid rgb(255, 91, 15) 3px;
+        padding: 10px;
+        background-color: rgb(58, 58, 92);
+        color: white;
+        border-radius:15px;
+        margin: 1%;
+    }
+}*/
+.blocflex {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem;
+}
+.blocflex article {
+  padding: 1rem;
+  flex: 1 1 200px;
+  border: solid rgb(255, 91, 15) 3px;
+  padding: 10px;
+  background-color: rgb(58, 58, 92);
+  color: white;
+  border-radius: 15px;
+  margin: 1%;
 }/*# sourceMappingURL=style.css.map */
