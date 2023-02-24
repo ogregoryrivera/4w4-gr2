@@ -325,6 +325,11 @@ h1 {
   font-size: clamp(0.75rem, -0.75rem + 4.8vw, 3.75rem);
   display: flex;
   justify-content: center;
+  border-radius: 0px 25px 25px 0px;
+  color: purple;
+  background-color: orange;
+  width: fit-content;
+  padding: 2rem;
 }
 
 h2 {
@@ -354,6 +359,8 @@ h6 {
 
 P {
   font-size: clamp(0.5rem, 0.125rem + 1.2vw, 1.1rem);
+  color: orangered;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
@@ -390,6 +397,17 @@ a:hover {
   color: turquoise;
 }
 
+/*Les balises*/
+ul, ol {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* ----------------------- pre */
 /* --------------------------------------------- composant */
 .site__footer {
   display: flex;
@@ -414,16 +432,59 @@ a:hover {
   text-decoration: none;
 }
 
+header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.site__header {
+  display: flex;
+  flex-direction: column;
+}
+
 .site__header__logo {
   display: flex;
   justify-content: space-between;
 }
 
+.logomenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+@media screen and (min-width: 700px) {
+  .logomenu {
+    flex-direction: row;
+  }
+}
+
+.recherche__input {
+  background-color: rgba(193, 125, 193, 0.494);
+  border: 7px solid orange;
+  padding: 0.2rem;
+}
+
+.recherche__bouton {
+  width: 3rem;
+}
+
+.menu-entete-container {
+  margin-right: 20rem;
+}
 .menu-entete-container .menu {
   display: flex;
   list-style-type: none;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+@media screen and (min-width: 700px) {
+  .menu-entete-container .menu {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 .menu-entete-container .menu .menu-item {
   color: #6eff73;
@@ -432,9 +493,27 @@ a:hover {
 .menu-entete-container .menu .menu-item a {
   display: block;
   background-color: rgb(109, 109, 109);
-  padding: 30px 20px;
-  border-radius: 25% 0 25% 0;
-  margin: 5%;
+  font-size: clamp(0.625rem, 0.4167rem + 0.6667vw, 1.25rem);
+  padding: 0rem;
+}
+@media screen and (min-width: 700px) {
+  .menu-entete-container .menu .menu-item a {
+    padding: 0.5rem;
+    margin: 5%;
+  }
+}
+
+.site__header__h1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.recherche {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-right: 50px;
 }
 
 /*

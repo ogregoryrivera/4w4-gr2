@@ -13,12 +13,15 @@
     <header class="site__header">
         <section class="site__header__logo">
         <?php the_custom_logo(); ?> 
+        <div class="logomenu">
         <?php wp_nav_menu(array(
             "menu" => "entete",
             "container" => "nav"
         )) ?> 
+        <?php get_search_form() ?>
+        </div> 
         </section>
         
-        <h1><a href="<?= bloginfo('url') ?>"><?= bloginfo('name') ?></a></h1>
-        <h2><?= bloginfo('description') ?></h2>
+        <h1 class="site__header__h1"><a href="<?= bloginfo('url') ?>"><?= bloginfo('name') ?></a></h1>
+        <h2 class="site__header__h2"><?= bloginfo('description') ?></h2>
     </header>

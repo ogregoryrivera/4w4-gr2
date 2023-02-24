@@ -2,7 +2,10 @@
 
 /*Les balises*/
 
-ul,ol{}
+ul,ol{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 ul>li,
 ol>li{
@@ -12,6 +15,12 @@ ol>li{
 ul>li{}
 
 ol>li{}
+
+ul{
+    list-style-type: none;
+}
+
+
 
 ol>li>ol{}
 

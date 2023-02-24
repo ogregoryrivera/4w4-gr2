@@ -1,5 +1,11 @@
+header{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .site__header{
-    
+    display: flex;
+    flex-direction: column;
 }
 
 .site__header__logo{
@@ -7,25 +13,79 @@
     justify-content: space-between;
 }
 
+.logomenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    @media screen and (min-width:700px) {
+        flex-direction: row;
+    }
+}
+
+.recherche__input{
+    background-color: rgba(193, 125, 193, 0.494);
+    border: 7px solid orange;
+    padding: 0.2rem;
+    
+
+}
+
+.recherche__bouton{
+    width: 3rem;
+}
+
 .menu-entete-container{ // nav
+    margin-right: 20rem;
+
     .menu{// ul
         display: flex;
         list-style-type: none;
-        justify-content: space-around;
-        align-items: center;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        @media screen and (min-width:700px) {
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
 
         .menu-item{// li
             color: #6eff73;
             justify-content: flex-end;
             
+            
             a{
                 display: block;
                 background-color: rgb(109, 109, 109);
-                padding: 30px 20px;
-                border-radius: 25% 0 25% 0;
-                margin: 5%;
+                font-size: clamp(0.625rem, 0.4167rem + 0.6667vw, 1.25rem);
+                padding: 0rem;
+                
+                @media screen and (min-width:700px) {
+                    padding: 0.5rem;
+                    margin: 5%;
+                    
+                }
                 
             }
         }
     }
+}
+
+.site__header__h1{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.site__header__h2{}
+
+.recherche{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-right: 50px;
 }
