@@ -1,12 +1,13 @@
 header{
     display: flex;
     flex-wrap: wrap;
+    @media screen and (min-width:1000px) {
+        background-color: rgb(58, 58, 92);
+        padding: 2%;
+    }
 }
 
-.site__header{
-    display: flex;
-    flex-direction: column;
-}
+
 
 .site__header__logo{
     display: flex;
@@ -17,10 +18,8 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column-reverse;
-    @media screen and (min-width:700px) {
-        flex-direction: row;
-    }
+    flex-direction: row;
+    
 }
 
 .recherche__input{
@@ -44,7 +43,7 @@ header{
         justify-content: center;
         align-items: flex-start;
         flex-direction: column;
-        @media screen and (min-width:700px) {
+        @media screen and (min-width:1000px) {
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
@@ -58,11 +57,12 @@ header{
             
             a{
                 display: block;
-                background-color: rgb(109, 109, 109);
+                background-color: orangered;
                 font-size: clamp(0.625rem, 0.4167rem + 0.6667vw, 1.25rem);
                 padding: 0rem;
+                box-shadow: 6px 2px 5px 0px rgba(145,109,194,0.75);
                 
-                @media screen and (min-width:700px) {
+                @media screen and (min-width:1000px) {
                     padding: 0.5rem;
                     margin: 5%;
                     
@@ -80,7 +80,11 @@ header{
     
 }
 
-.site__header__h2{}
+.site__header__h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 2%;
+
+}
 
 .recherche{
     display: flex;

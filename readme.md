@@ -22,3 +22,10 @@
 - https://eddytuto.ca/
 - https://developer.wordpress.org/themes/
 - https://cidweb15.sg-host.com/
+
+# TP1 
+## 4w4 - Conception d'interface et développement Web
+### Auteur: Grégory Osorio
+#### Description
+- Améliorer le site et son apparence
+- Améliorer le footer

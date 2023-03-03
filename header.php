@@ -9,7 +9,7 @@
     wp_head();
 ?> 
 </head>
-<body>
+<body class="site">
     <header class="site__header">
         <section class="site__header__logo">
         <?php the_custom_logo(); ?> 
@@ -25,3 +25,10 @@
         <h1 class="site__header__h1"><a href="<?= bloginfo('url') ?>"><?= bloginfo('name') ?></a></h1>
         <h2 class="site__header__h2"><?= bloginfo('description') ?></h2>
     </header>
+    <aside class="site__aside">
+            <h3>menu secondaire</h3>
+            <?php wp_nav_menu(array(
+                "menu" => "aside",
+                "container" => "nav"
+            )) ?> 
+    </aside>
