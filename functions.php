@@ -29,6 +29,17 @@ add_theme_support('custom-logo', array('heigh' => 400,
                                        'width' => 700));
 add_theme_support('post-thumbnails');
 
+/*--------------------------------------Modification des choix de menu "cours" */
+function personnalisation_menu_item_title($title, $item, $args, $depth) {
+    // Remplacer 'cours' par l'identifiant de votre menu
+    if($args->menu == 'cours') {
+// Modifier la longueur du titre en fonction de vos besoins
+$title = wp_trim_words($title, 3, ' ... '); //On garde uniquement trois mots pour le titre du choix
+}
+return $title;
+}
+add_filter('nav_menu_item_title', 'personnalisation_menu_item_title', 10, 4);
+
 /**
  * Modifie la requete principale de Wordpress avant qu'elle soit exécuté
  * le hook « pre_get_posts » se manifeste juste avant d'exécuter la requête principal
