@@ -1,0 +1,15 @@
+/* -------------------------------- Bouton Burger */
+.btn__burger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    margin-top: 2%;
+    @media screen and (min-width: 1000px) {
+        display: none;
+    }
+}
+
+#chkMenu{
+    display: none;
+}
