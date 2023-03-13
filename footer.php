@@ -1,4 +1,12 @@
+
+
 <footer class="site__footer">
+
+<div class="logo_footer">
+    <?php the_custom_logo(); ?> 
+</div>
+
+
     <section class="colonne_1">
         <p>Colonne 1</p> 
         <?php wp_nav_menu(array(

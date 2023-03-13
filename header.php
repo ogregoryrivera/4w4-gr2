@@ -13,9 +13,11 @@
 
     <header class="site__header">
         <section class="site__header__logo">
+        <div class="mon_logo">
+            <?php the_custom_logo(); ?> 
+            <h1 class="site__header__h1">4w4</h1>
+        </div>
         
-        <?php the_custom_logo(); ?> 
-        <h1 class="site__header__h1">4w4</h1>
         <div class="logomenu">
         <input type="checkbox" id="chkMenu">
             <?php wp_nav_menu(array(

@@ -29,9 +29,12 @@ Text Domain: 2023-4w4
 @import "composant/pied2page";
 @import "composant/menu_entete";
 @import "composant/site_entete";
+@import "composant/burger";
 @import "composant/bloc_flex";
 @import "composant/aside";
-@import "composant/burger";
+@import "composant/aside_cours";
+@import "composant/footer_colonne_menu";
+
 
 /* --------------------------------------------- layout */
 @import "layout/aside-contenu";

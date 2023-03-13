@@ -371,11 +371,11 @@ P {
 }
 
 h1 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Climate Crisis", cursive;
 }
 
 h2 {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Oswald", sans-serif;
   /* font-family: "Slackey", cursive; */
 }
 
@@ -423,9 +423,47 @@ ul {
   background-color: orange;
   font-size: 3em;
 }
+.site__footer .colonne_1 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(58, 58, 92);
+}
 .site__footer .colonne_1 a {
   font-size: 1rem;
   color: red;
+}
+.site__footer .colonne_1 p {
+  margin-left: 2rem;
+  font-size: 2rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+}
+.site__footer .colonne_2 {
+  background-color: rgb(58, 58, 92);
+}
+.site__footer .colonne_2 a {
+  font-size: 1rem;
+  color: red;
+}
+.site__footer .colonne_2 p {
+  margin-left: 2rem;
+  font-size: 2rem;
+}
+.site__footer .colonne_3 {
+  background-color: rgb(58, 58, 92);
+}
+.site__footer .colonne_3 a {
+  font-size: 1rem;
+  color: red;
+}
+.site__footer .colonne_3 p {
+  margin-left: 2rem;
+  font-size: 2rem;
+}
+.site__footer .logo_footer {
+  display: flex;
+  align-items: center;
+  padding: 0% 2% 0% 2%;
 }
 
 .site__footer section {
@@ -536,8 +574,8 @@ ul {
 
 .site__header__h1 {
   position: absolute;
-  margin-top: 5rem;
-  margin-left: 1rem;
+  margin-top: -5rem;
+  margin-left: 0rem;
   background-color: transparent;
   font-size: 2rem;
 }
@@ -556,6 +594,24 @@ ul {
   justify-content: flex-start;
   flex-wrap: wrap;
   margin-right: 50px;
+}
+
+/* -------------------------------- Bouton Burger */
+.btn__burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  margin-top: 2%;
+}
+@media screen and (min-width: 1000px) {
+  .btn__burger {
+    display: none;
+  }
+}
+
+#chkMenu {
+  display: none;
 }
 
 .blocflex {
@@ -601,25 +657,69 @@ ul {
 
 .menu-aside-container .menu {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
-/* -------------------------------- Bouton Burger */
-.btn__burger {
+.menu-cours-container .menu {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  margin-top: 2%;
+  flex-direction: row;
 }
 @media screen and (min-width: 1000px) {
-  .btn__burger {
-    display: none;
+  .menu-cours-container .menu {
+    flex-direction: column;
+  }
+}
+.menu-cours-container .menu .menu-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 2%;
+}
+.menu-cours-container .menu .menu-item a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2%;
+}
+.menu-cours-container .menu .menu-item a code {
+  display: block;
+  white-space: nowrap;
+}
+.menu-cours-container .menu .menu-item a p {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .menu-cours-container .menu .menu-item a p {
+    display: block;
+    white-space: nowrap;
   }
 }
 
-#chkMenu {
-  display: none;
+.menu-lien_footer_1-container {
+  display: flex;
+  flex-direction: column;
+}
+.menu-lien_footer_1-container .menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-lien_footer_2-container {
+  display: flex;
+  flex-direction: column;
+}
+.menu-lien_footer_2-container .menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-lien_footer_3-container {
+  display: flex;
+  flex-direction: column;
+}
+.menu-lien_footer_3-container .menu {
+  display: flex;
+  flex-direction: column;
 }
 
 /* --------------------------------------------- layout */
@@ -646,13 +746,6 @@ ul {
   grid-area: aside;
   background-color: rgb(47, 47, 47);
 }
-.site__aside .menu-cours-container {
-  width: 20rem;
-}
-.site__aside .menu-cours-container a {
-  display: flex;
-  flex-direction: row;
-}
 .site__aside #menu-4w4 {
   width: 10rem;
 }
@@ -666,7 +759,6 @@ ul {
 }
 
 .site {
-  width: 100vw;
   overflow-x: hidden;
   display: grid;
   grid-template-columns: auto;

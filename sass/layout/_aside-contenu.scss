@@ -23,13 +23,7 @@
     grid-area: aside;
     background-color: rgb(47, 47, 47);
     
-    .menu-cours-container{
-        width: 20rem;
-      a{
-        display: flex;
-        flex-direction: row;
-      }
-    }
+  
 
     #menu-4w4{
       width: 10rem;
@@ -48,7 +42,6 @@
   }
 
   .site {
-    width: 100vw;
     overflow-x: hidden;
     display: grid;
     grid-template-columns: auto;

@@ -7,6 +7,7 @@ h1 {
     background-color: orange;
     width: fit-content;
     padding: 2rem;
+  
     @media screen and (min-width:1000px) {
       border-radius: 25px 25px 25px 25px;
     }
@@ -43,12 +44,14 @@ h1 {
   }
   
   h1 {
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    // font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-family: 'Climate Crisis', cursive;
 
   }
   
   h2 {
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-family: 'Oswald', sans-serif;
+
     /* font-family: "Slackey", cursive; */
   }
   

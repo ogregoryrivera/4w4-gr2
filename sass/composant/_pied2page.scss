@@ -6,11 +6,54 @@
     font-size: 3em;
 
     .colonne_1{
-        
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(58, 58, 92);
         a{
             font-size: 1rem;
             color: red;
         }
+
+        p{
+            margin-left: 2rem;
+            font-size: 2rem;
+            font-family: 'Oswald', sans-serif;
+            font-weight: bold;
+
+        }
+        
+    }
+
+    .colonne_2{
+        background-color: rgb(58, 58, 92);
+        a{
+            font-size: 1rem;
+            color: red;
+        }
+
+        p{
+            margin-left: 2rem;
+            font-size: 2rem;
+        }
+    }
+
+    .colonne_3{
+        background-color: rgb(58, 58, 92);
+        a{
+            font-size: 1rem;
+            color: red;
+        }
+
+        p{
+            margin-left: 2rem;
+            font-size: 2rem;
+        }
+    }
+
+    .logo_footer{
+        display: flex;
+        align-items: center;
+        padding: 0% 2% 0% 2%;
     }
 }
 
