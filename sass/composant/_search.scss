@@ -1,5 +1,12 @@
 
 .search__main{
+    
+    display: flex;
+    flex-direction: column;
+    width: 2px;
+    flex-wrap: wrap;
+    width: 50rem;
+
     h1{
         font-size: 2rem;
         background-color: rgba(0, 0, 0, 0);
@@ -9,20 +16,14 @@
         color: green;
     }
 
-    .no-aside{
-        grid-template-areas:
-          "header"
-          "main"
-          "footer";
-        @media screen and (min-width:1000px) {
-          grid-template-columns: auto;
-          grid-template-areas:
-          "header"
-          "main"
-          "footer";
-        }
-      }
+    
 }
+
+
+
+
+
+
 
 
     

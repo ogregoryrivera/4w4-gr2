@@ -6,7 +6,7 @@
     //strpos($titre, '(') Permet de trouver la position du caractère, '('
 ?> 
 
-<article class="blocflex__article">    
+<article class="blocflex__search">    
     <h5><?= $titre_long ?> </h5>
     <h2><a href="<?php the_permalink(); ?>"> Sigle: <?= $sigle ?></a></h2>
     

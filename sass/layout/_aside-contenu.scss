@@ -13,6 +13,7 @@
     grid-area: main;
     overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
   }
+
   
   .site__footer {
     grid-area: footer;
