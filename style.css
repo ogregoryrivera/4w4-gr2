@@ -722,8 +722,12 @@ ul {
   flex-direction: column;
 }
 
-.resultat-recherche {
-  font-size: 1rem;
+.search__main h1 {
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0);
+}
+.search__main .paragraphe__recherche {
+  color: green;
 }
 
 /* --------------------------------------------- layout */
