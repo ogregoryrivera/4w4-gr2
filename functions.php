@@ -42,10 +42,19 @@ function personnalisation_menu_item_title($title, $item, $args, $depth) {
 $sigle = substr($title,0,7);
 $title = substr($title,7);
 $title = "<code>" . $sigle . "</code>" . "<p>" . wp_trim_words($title, 3, ' ... ') . "<p>"; //On garde uniquement trois mots pour le titre du choix
+
 }
+
+if($args->menu=='4w4'){
+    if(substr($title,0,1)==0){
+        $titre = substr($title,1);
+    }
+}
+
 return $title;
 }
 add_filter('nav_menu_item_title', 'personnalisation_menu_item_title', 10, 4);
+
 
 /**
  * Modifie la requete principale de Wordpress avant qu'elle soit exécuté

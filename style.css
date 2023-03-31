@@ -722,6 +722,10 @@ ul {
   flex-direction: column;
 }
 
+.resultat-recherche {
+  font-size: 1rem;
+}
+
 /* --------------------------------------------- layout */
 /**
     Mise en page général avec GRID

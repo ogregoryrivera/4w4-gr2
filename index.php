@@ -5,8 +5,7 @@
      */
 
      get_header();
-?> 
-<h1>Bienvenue dans le cours 4W4</h1>
+?>
 
 <main>
 <h3>index.php</h3>

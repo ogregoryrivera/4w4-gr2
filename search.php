@@ -5,8 +5,8 @@
      */
 
      get_header();
-?> 
-<h1>Bienvenue dans le cours 4W4</h1>
+?>
+<h1 class="resultat-recherche">Résultat de la recherche</h1>
 
 <main>
 <h3>search.php</h3>
