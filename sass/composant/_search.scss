@@ -8,7 +8,23 @@
     .paragraphe__recherche{
         color: green;
     }
+
+    .no-aside{
+        grid-template-areas:
+          "header"
+          "main"
+          "footer";
+        @media screen and (min-width:1000px) {
+          grid-template-columns: auto;
+          grid-template-areas:
+          "header"
+          "main"
+          "footer";
+        }
+      }
 }
+
+
     
 
 

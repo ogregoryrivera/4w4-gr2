@@ -729,6 +729,15 @@ ul {
 .search__main .paragraphe__recherche {
   color: green;
 }
+.search__main .no-aside {
+  grid-template-areas: "header" "main" "footer";
+}
+@media screen and (min-width: 1000px) {
+  .search__main .no-aside {
+    grid-template-columns: auto;
+    grid-template-areas: "header" "main" "footer";
+  }
+}
 
 /* --------------------------------------------- layout */
 /**
