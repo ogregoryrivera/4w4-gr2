@@ -41,8 +41,6 @@
     endif; ?>    
 </main>
 
-<?php if(! is_search()){
-        get_template_part("template-parts/aside");
-    }  ?> 
+
 
 <?php get_footer(); ?> 
