@@ -618,6 +618,8 @@ ul {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  min-height: 100vh;
+  background-color: rgba(255, 255, 255, 0.469);
 }
 
 /*
@@ -751,6 +753,14 @@ ul {
 }
 .search__main .paragraphe__recherche {
   color: green;
+}
+
+.menu-evenement-container .menu {
+  display: flex;
+}
+.menu-evenement-container .menu .menu-item {
+  border: 1px solid #aaa;
+  height: 50px;
 }
 
 /* --------------------------------------------- layout */

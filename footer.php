@@ -27,6 +27,10 @@
                 "menu" => "lien_footer_3",
                 "container" => "nav"
             )) ?> 
+
+        <div class="sidebar">
+            <?php dynamic_sidebar( 'sidebar' ); ?>
+        </div>
     </section>
 </footer>
 
