@@ -11,7 +11,6 @@
     <?php 
         if (has_post_thumbnail()){ 
             the_post_thumbnail('thumbnail'); 
-            echo get_the_ID();
         }
         else{
             echo get_the_post_thumbnail(3,'thumbnail');
