@@ -16,4 +16,14 @@
     <h5><?= $duree ?> </h5>
     <p><?php the_field('enseignant') ?> </p>
     <p><?php the_field('domaine') ?> </p>
+
+    <?php 
+        if (has_post_thumbnail()){ 
+            the_post_thumbnail('thumbnail'); 
+        }
+        else{
+            echo get_the_post_thumbnail(3,'thumbnail');
+        }
+        
+    ?> 
 </article>

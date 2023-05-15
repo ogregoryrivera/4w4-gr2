@@ -1,4 +1,13 @@
-.menu-evenement-container{
+.menu-archive-container{
+    li{
+        height: 20rem;
+        background-image: url(images/chot.jpg);
+        background-position: bottom;
+    background-size: cover;
+    }
+    
+}
+.menu-evenement-container,.menu-archive-container{
     .menu{
         display: flex;
         .menu-item{

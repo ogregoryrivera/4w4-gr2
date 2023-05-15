@@ -647,6 +647,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  background-image: url(images/chot.jpg);
 }
 .blocflex__article h2, .blocflex__article h5, .blocflex__article p {
   margin: 0;
@@ -755,22 +756,29 @@ ul {
   color: green;
 }
 
-.menu-evenement-container .menu {
+.menu-archive-container li {
+  height: 20rem;
+  background-image: url(images/chot.jpg);
+  background-position: bottom;
+  background-size: cover;
+}
+
+.menu-evenement-container .menu, .menu-archive-container .menu {
   display: flex;
 }
-.menu-evenement-container .menu .menu-item {
+.menu-evenement-container .menu .menu-item, .menu-archive-container .menu .menu-item {
   border: 3px solid orangered;
   background-color: rgb(58, 58, 92);
   margin: 5px;
 }
-.menu-evenement-container .menu .menu-item a span {
+.menu-evenement-container .menu .menu-item a span, .menu-archive-container .menu .menu-item a span {
   display: block;
   font-size: 2rem;
 }
-.menu-evenement-container .menu .menu-item a .description {
+.menu-evenement-container .menu .menu-item a .description, .menu-archive-container .menu .menu-item a .description {
   color: orangered;
 }
-.menu-evenement-container .menu .menu-item a .menu-thumbnail {
+.menu-evenement-container .menu .menu-item a .menu-thumbnail, .menu-archive-container .menu .menu-item a .menu-thumbnail {
   display: block;
   width: 200px;
   height: 150px;
