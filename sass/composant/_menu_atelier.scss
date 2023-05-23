@@ -17,7 +17,10 @@
             align-content: center;
         }
 
-    
+        
+        }
+
+        
     }
 
     
@@ -38,7 +41,7 @@
     //    background-image: url(images/wordpress-theme.png);
     //}
     
-}
+
 .menu-atelier-container{
     .menu{
         display: flex;
@@ -49,13 +52,12 @@
             //height: 50px;
             a{
                 
-                
 
                 span{
                     display: block;
-                    margin-left: 2%;
                     font-size: 2rem;
                     transition: transform 0.2s;
+                    
                 }
 
                 span:hover{
@@ -68,14 +70,19 @@
 
                 .description{
                     color: orangered;
+                    white-space: normal;
                 }
 
                 .menu-thumbnail{
                     display: block;
+                    position: absolute;
                     width: 200px;
                     height: 150px;
                     padding: 10px;
                 }
+
+                
+                
             }
         }
     }

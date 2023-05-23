@@ -812,7 +812,6 @@ ul {
 }
 .menu-atelier-container .menu .menu-item a span {
   display: block;
-  margin-left: 2%;
   font-size: 2rem;
   transition: transform 0.2s;
 }
@@ -821,9 +820,11 @@ ul {
 }
 .menu-atelier-container .menu .menu-item a .description {
   color: orangered;
+  white-space: normal;
 }
 .menu-atelier-container .menu .menu-item a .menu-thumbnail {
   display: block;
+  position: absolute;
   width: 200px;
   height: 150px;
   padding: 10px;

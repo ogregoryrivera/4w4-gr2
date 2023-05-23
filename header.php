@@ -16,6 +16,7 @@
         <div class="mon_logo">
             <?php the_custom_logo(); ?> 
             <h1 class="site__header__h1">4w4</h1>
+            <p>Lien Github: https://github.com/ogregoryrivera/4w4-gr2/tree/ef</p>
         </div>
         
         <div class="logomenu">
@@ -27,6 +28,8 @@
             <label class="btn__burger" for=chkMenu>
                 <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu&color=FFFFFF" width="32" height="32">
             </label>
+
+            
             <?php get_search_form() ?>
             
             
@@ -41,19 +44,17 @@
     </header>
     <?php if(! is_front_page() && ! is_search()){
         get_template_part("template-parts/aside");
-
-        $nouvelle_classe = "aside-atelier";
+        
+    }  
+    
+    $nouvelle_classe = "aside-atelier";
     if  (is_front_page() || 
         (! in_category("cours") && ! in_category("4w4")) ){
           $nouvelle_classe = 'no-aside';
         }
     if (is_page_template('template-atelier.php')) {
-         $nouvelle_classe = 'no-aside';    
+         $nouvelle_classe = 'aside-atelier';    
     }
-        
-    }  
-    
-    
   
     
     ?> 
