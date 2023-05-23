@@ -23,7 +23,6 @@
       if ( $query->have_posts() ) :
          while ( $query->have_posts() ) : $query->the_post(); ?>
          <?php get_template_part('template-parts/categorie', $category->slug); 
-               get_template_part('template-parts/template', $category->slug);
          ?>    
          <?php endwhile; ?>
       <?php endif;
