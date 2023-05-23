@@ -3,26 +3,40 @@
         height: 20rem;
         width: 20rem;
         background-position: bottom;
-    background-size: cover;
+        background-size: cover;
+        transition: transform scale(1.5);
+
+        li:hover{
+            transform: scale(1.1);
+        }
+
+        .menu-thumbnail{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-content: center;
+        }
 
     
     }
 
-    .atelier__react{
-        background-image: url(images/react.png);
-    }
-    .atelier__github{
-        background-image: url(images/github.png);
-    }
-    .atelier__node{
-        background-image: url(images/node_js.png);
-    }
-    .atelier__agile{
-        background-image: url(images/agile_methodology.png);
-    }
-    .atelier__wp{
-        background-image: url(images/wordpress-theme.png);
-    }
+    
+
+    //.atelier__react{
+    //    background-image: url(images/react.png);
+    //}
+    //.atelier__github{
+    //    background-image: url(images/github.png);
+    //}
+    //.atelier__node{
+    //    background-image: url(images/node_js.png);
+    //}
+    //.atelier__agile{
+    //    background-image: url(images/agile_methodology.png);
+    //}
+    //.atelier__wp{
+    //    background-image: url(images/wordpress-theme.png);
+    //}
     
 }
 .menu-atelier-container{
@@ -34,12 +48,18 @@
             margin: 5px;
             //height: 50px;
             a{
-
+                
                 
 
                 span{
                     display: block;
+                    margin-left: 2%;
                     font-size: 2rem;
+                    transition: transform 0.2s;
+                }
+
+                span:hover{
+                    transform: translateX(5%);
                 }
 
                 .title{

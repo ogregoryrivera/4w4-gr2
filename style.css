@@ -790,21 +790,16 @@ ul {
   width: 20rem;
   background-position: bottom;
   background-size: cover;
+  transition: transform scale(1.5);
 }
-.menu-atelier-container .atelier__react {
-  background-image: url(images/react.png);
+.menu-atelier-container li li:hover {
+  transform: scale(1.1);
 }
-.menu-atelier-container .atelier__github {
-  background-image: url(images/github.png);
-}
-.menu-atelier-container .atelier__node {
-  background-image: url(images/node_js.png);
-}
-.menu-atelier-container .atelier__agile {
-  background-image: url(images/agile_methodology.png);
-}
-.menu-atelier-container .atelier__wp {
-  background-image: url(images/wordpress-theme.png);
+.menu-atelier-container li .menu-thumbnail {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-content: center;
 }
 
 .menu-atelier-container .menu {
@@ -817,7 +812,12 @@ ul {
 }
 .menu-atelier-container .menu .menu-item a span {
   display: block;
+  margin-left: 2%;
   font-size: 2rem;
+  transition: transform 0.2s;
+}
+.menu-atelier-container .menu .menu-item a span:hover {
+  transform: translateX(5%);
 }
 .menu-atelier-container .menu .menu-item a .description {
   color: orangered;
@@ -842,6 +842,12 @@ ul {
 .site__main {
   grid-area: main;
   overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+}
+.site__main .atelier-box {
+  font-size: 2rem;
+  background-color: rgb(58, 58, 92);
+  padding: 2rem;
+  border: solid 5px orangered;
 }
 
 .site__footer {

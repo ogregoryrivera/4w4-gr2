@@ -12,6 +12,15 @@
   .site__main {
     grid-area: main;
     overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+    
+
+      .atelier-box{
+        font-size: 2rem;
+        background-color: rgb(58, 58, 92);
+        padding: 2rem;
+        border: solid 5px orangered;
+      }
+    
   }
 
   
