@@ -785,6 +785,50 @@ ul {
   padding: 10px;
 }
 
+.menu-atelier-container li {
+  height: 20rem;
+  width: 20rem;
+  background-position: bottom;
+  background-size: cover;
+}
+.menu-atelier-container .atelier__react {
+  background-image: url(images/react.png);
+}
+.menu-atelier-container .atelier__github {
+  background-image: url(images/github.png);
+}
+.menu-atelier-container .atelier__node {
+  background-image: url(images/node_js.png);
+}
+.menu-atelier-container .atelier__agile {
+  background-image: url(images/agile_methodology.png);
+}
+.menu-atelier-container .atelier__wp {
+  background-image: url(images/wordpress-theme.png);
+}
+
+.menu-atelier-container .menu {
+  display: flex;
+}
+.menu-atelier-container .menu .menu-item {
+  border: 3px solid orangered;
+  background-color: rgb(58, 58, 92);
+  margin: 5px;
+}
+.menu-atelier-container .menu .menu-item a span {
+  display: block;
+  font-size: 2rem;
+}
+.menu-atelier-container .menu .menu-item a .description {
+  color: orangered;
+}
+.menu-atelier-container .menu .menu-item a .menu-thumbnail {
+  display: block;
+  width: 200px;
+  height: 150px;
+  padding: 10px;
+}
+
 /* --------------------------------------------- layout */
 /**
     Mise en page général avec GRID

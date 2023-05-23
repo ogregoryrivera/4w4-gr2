@@ -1,0 +1,62 @@
+.menu-atelier-container{
+    li{
+        height: 20rem;
+        width: 20rem;
+        background-position: bottom;
+    background-size: cover;
+
+    
+    }
+
+    .atelier__react{
+        background-image: url(images/react.png);
+    }
+    .atelier__github{
+        background-image: url(images/github.png);
+    }
+    .atelier__node{
+        background-image: url(images/node_js.png);
+    }
+    .atelier__agile{
+        background-image: url(images/agile_methodology.png);
+    }
+    .atelier__wp{
+        background-image: url(images/wordpress-theme.png);
+    }
+    
+}
+.menu-atelier-container{
+    .menu{
+        display: flex;
+        .menu-item{
+            border: 3px solid orangered;
+            background-color: rgb(58, 58, 92);
+            margin: 5px;
+            //height: 50px;
+            a{
+
+                
+
+                span{
+                    display: block;
+                    font-size: 2rem;
+                }
+
+                .title{
+                    
+                }
+
+                .description{
+                    color: orangered;
+                }
+
+                .menu-thumbnail{
+                    display: block;
+                    width: 200px;
+                    height: 150px;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
